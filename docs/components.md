@@ -15,6 +15,12 @@ The client has the following base types:
 
 All additional types need to extend one of the base types using constraints.
 
+### See also
+ - [Type Descriptor](descriptors?id=type-descriptor)
+ - [Built-in Types](builtins/types)
+ 
+----
+
 ## Constraints
 Constraints are simple javascript functions which receive a value and checks whether or not it is valid 
 for a certain type.  
@@ -23,11 +29,23 @@ By adding constraints to an existing type (doesn't have to be a base type) a new
 For example, a new type can be created for an integer which is based on the number base type along with 
  a function which checks if the value is an integer.
 
+### See also
+ - [Constraint Descriptor](descriptors?id=constraint-descriptor)
+ - [Built-in Constraints](builtins/constraints)
+ 
+----
+
 ## Converters
 Converters are javascript functions which takes in a value of a certain type and returns a converted value 
 of another type.
 
 For example, convert int to float, list to string, etc.
+
+### See also
+ - [Converter Descriptor](descriptors?id=converter-descriptor)
+ - [Built-in Converters](builtins/converters)
+ 
+----
 
 ## Commands
 Commands are what fugazi is all about.  
@@ -46,12 +64,17 @@ Each parameter is defined using a name and a type.
 
 When executing a command input by the user, the client will search for commands based on their syntax.
 
+### See also
+ - [Command Descriptor](descriptors?id=command-descriptor)
+ - [Built-in Commands](builtins/commands)
+
+----
+
 ## Modules
 A module is basically an aggregation of other components (including inner modules). You can look at it as a 
-namespace which contains other components.  
+container for other components.  
 In addition to the inner components, the module also contains other information:
  - Remote configuration: Where the http requests should be sent to
- - Module level variables: The ability to map between syntax params and runtime values
 
 Modules can have the following flavours:
  - **LocalModule**: Loaded as a javascript file and it can only executes local commands
@@ -60,3 +83,10 @@ Modules can have the following flavours:
  - **RootModule**: The main module which is loaded by the request of the user into fugazi. Can be either local 
  or remote and can include inner modules
  - **InnerModule**: Any module that has a parent
+
+### See also
+ - [Module Descriptor](descriptors?id=module-descriptor)
+
+----
+
+[Next: Descriptors](descriptors?id=descriptors)

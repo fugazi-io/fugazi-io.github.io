@@ -2,6 +2,8 @@
 
 > A web based, plug n' play terminal
 
+<br/><br/>
+
 [Get Started](#fugaziio)
 [The Terminal](http://fugazi.io)
 [GitHub](https://github.com/fugazi-io)

@@ -6,29 +6,27 @@ A web based, plug n' play terminal
  
 
 ## What is it not?
-fugazi isn't a bash terminal.  
+fugazi isn't a shell terminal.  
 All of the commands you are used to from your terminal won't work in fugazi, with the exception of `man`.  
 
 ## So, what is it?
 fugazi aims to provide a single command interface for all of the different services and applications 
 which developers are using on a daily basis.  
-These services are mapped into commands that are executed using a simple and readable syntax.  
-The terminal is both configurable and extendable which allow the user to load the functionality that he/she 
-needs.
+These services are mapped into commands that are executed using a simple and intuitive syntax.  
+The terminal is configurable and extendable, which allows the user to define, share and use specific pieces of functionality.
 
 ### Key concepts
  - **Web Client**: A command line interface which is loaded in the browser. It can be served from [http://fugazi.io](http://fugazi.io) 
  or self hosted. 
- - **Components**: Loadable pieces of information/functionality which extend the web client, such as 
- modules, commands, types and more
- - **Descriptors**: A json or javascript files which describe the components to the web client
+ - **[Components](components)**: Plugins which extend the terminal functionality
+ - **[Descriptors](descriptors)**: A json or javascript files which describe the components to the web client
  - **Connectors**: An application which exposes a fugazi module (including http endpoints for commands) 
  for a service or another application (such as a database)
 
 ### How it works
 Loading a descriptor into the client will allow it to "understand" the desired service, and it will then 
-expose all of the commands included in the service.  
-When a user chooses to execute an input the client will locate the appropriate command based on the syntax 
+expose the commands included in the service.  
+When a user submits a command input string the client will locate the appropriate command based on the syntax 
 it provided in the descriptor.  
 The client can execute commands in one of two forms:
  - Javascript functions that are loaded to the client. When invoked the arguments from the command line 
@@ -68,3 +66,7 @@ If you find a bug feel free to file an issue in the relevant project issues page
 
 If you'd like to help with pushing fugazi forward (and there's a long road ahead), then talk to us in 
 the mentioned gitter, or mail us to this _gmail.com_ address: _terminal.fugazi.io_.
+
+----
+
+[Next: Components](components?id=components)
