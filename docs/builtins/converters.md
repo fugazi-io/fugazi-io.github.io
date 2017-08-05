@@ -5,7 +5,7 @@ Useful converters.
 ## String to boolean
 Converts a value of type [string](builtins/types?id=string) to a value of type [boolean](builtins/types?id=boolean).
 
-#### Usage in descriptors
+##### Usage in descriptors
 ```json
 {
 	"name": "mycommand",
@@ -34,7 +34,7 @@ Equivalent to:
 ## String to number
 Converts a value of type [string](builtins/types?id=string) to a value of type [number](builtins/types?id=number).
 
-#### Usage in descriptors
+##### Usage in descriptors
 ```json
 {
 	"name": "mycommand",
