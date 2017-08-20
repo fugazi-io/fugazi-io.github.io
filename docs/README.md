@@ -20,7 +20,7 @@ The terminal is configurable and extendable, which allows the user to define, sh
  or self hosted. 
  - **[Components](components)**: Plugins which extend the terminal functionality
  - **[Descriptors](descriptors)**: A json or javascript files which describe the components to the web client
- - **Connectors**: An application which exposes a fugazi module (including http endpoints for commands) 
+ - **[Connectors](connector ":target=_self")**: An application which exposes a fugazi module (including http endpoints for commands) 
  for a service or another application (such as a database)
 
 ### How it works
