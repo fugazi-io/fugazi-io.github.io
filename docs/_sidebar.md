@@ -9,3 +9,5 @@
 - [Connector](connector ":target=_self")
 
 - [Expose an existing http based api](exposeService)
+
+- [Contributing](contributing)

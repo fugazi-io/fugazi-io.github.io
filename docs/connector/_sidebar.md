@@ -13,3 +13,5 @@
 	- [API](api ":target=_self")
 
 - [Expose an existing http based api](../#exposeService ":target=_self")
+
+- [Contributing](../#contributing ":target=_self")

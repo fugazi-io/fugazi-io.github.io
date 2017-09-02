@@ -13,3 +13,5 @@
 - [Connector](connector/)
 
 - [Expose an existing http based api](exposeService)
+
+- [Contributing](contributing)
