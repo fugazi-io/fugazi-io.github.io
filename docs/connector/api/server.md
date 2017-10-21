@@ -110,7 +110,6 @@ The builder pattern is used for most methods, so chaining can be used.
 
 ```typescript
 class ServerBuilder {
-	public static readonly DEFAULT_HOST = "localhost";
 	public static readonly DEFAULT_PORT = 3333;
 	
 	public logger(logger: winston.LoggerInstance): this;
@@ -131,10 +130,6 @@ class ServerBuilder {
 ```
 
 #### Static Members
-##### DEFAULT_HOST
-<em>public static readonly DEFAULT_HOST = "localhost"</em>  
-The default host which will be used to bind the connector to in case a different host is provided.
-
 ##### DEFAULT_PORT
 <em>public static readonly DEFAULT_PORT = 3333</em>  
 The default port which will be used to bind the connector to in case a different port is provided.
@@ -168,8 +163,7 @@ _this_ instance to be used for chaining
 
 ##### host(host)
 _public host(host: string): this_  
-Sets the host name to which the connector server will be bound to.  
-If this method isn't used then the [ServerBuilder.DEFAULT_HOST](?id=default_host) will be used.
+Sets the host name to which the connector server will be bound to.
 
 **Parameters:**  
 host - the host name to bind to
